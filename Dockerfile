@@ -1,6 +1,8 @@
+FROM tomcat:8.0
 
-From tomcat:8.0 
-LABEL maintainer "valaxytech@gmail.com"
-CMD ["catalina.sh","run"]
+LABEL maintainer="satishcool236@gmail.com"
+
+CMD ["catalina.sh"]
+
 COPY ./webapp.war /usr/local/tomcat/webapps
 
